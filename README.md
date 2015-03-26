@@ -4,11 +4,14 @@ This gem bundles the Altibase JDBC jar file for running in JRuby.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's Gemfile (you should only do this if you are using the gem directly):
 
 ```ruby
-gem 'jdbc-altibase'
+gem :git => 'https://github.com/leadbaxter/jdbc-altibase.git'
 ```
+
+Normally, you will probably be using the 'activerecord-jdbcaltibase-adapter' gem, in which case this gem
+will automatically be included.
 
 And then execute:
 
